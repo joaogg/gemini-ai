@@ -1,0 +1,39 @@
+
+Primeiramente você deve criar um API Key no Google AI Studio: 
+https://ai.google.dev
+
+Vamos dar início ao nosso projeto:
+
+- Iniciando o repositório
+npm init
+
+- Pacotes que iremos instalar
+
+// Api
+npm install express --save
+
+// Desenvolvimento Rápido
+npm install nodemon --save
+
+// Gemini
+npm install @google/generative-ai --save
+
+// Env
+npm install dotenv --save
+
+// Cliente HTTP
+npm install axios --save
+
+index.js
+API com nossas duas rotas: /byText e /byImage
+
+routes/gemini.js
+Métodos com os casos de uso e modelos da Gemini AI para geração de conteúdo, tanto para a requisição contendo texto quanto para
+a requisição com imagem e texto.
+
+util.js
+Utilitário com o método de download da imagem enviada via parâmetro em nossa API.
+
+
+Documentação:
+https://ai.google.dev/gemini-api/docs?hl=pt-br
